@@ -22,7 +22,8 @@ export const solutions = [
   {
     id: 4,
     title: "Business restructuring and redesign",
-    description: "",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil enim perspiciatis ipsa non numquam incidunt .",
     url: "./src/assets/icons/window-maximize-regular.svg",
   },
   {

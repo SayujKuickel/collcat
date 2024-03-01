@@ -1,16 +1,24 @@
 import { useState } from "react";
+
 import Button from "./Button";
 
+// images
+import CollcatLogo from "../assets/icons/Collcat-logo.png";
+// icons
+import { FaBars, FaS } from "react-icons/fa6";
+import { RxCross2 } from "react-icons/rx";
+import { BsCaretUp } from "react-icons/bs";
+
 export default function NavBar() {
-  const [serviceMenuIsOpen, setServiceMenuIsOpen] = useState(false);
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [serviceMenuOpen, setServiceMenuOpen] = useState(false);
 
   return (
-    <header className=" font-sans relative ">
-      {/* <div className="container mx-auto"> */}
-      <div className="w-full flex items-center justify-between px-4 py-2">
+    <header className="relative">
+      <div className="container mx-auto flex items-center justify-between relatve px-2 md:px-0 ">
         <div className="flex items-center">
           <img
-            src="./src/assets/icons/Collcat-logo.png"
+            src={CollcatLogo}
             className="w-28 aspect-square "
             alt="Collcat-logo"
           />
@@ -19,40 +27,79 @@ export default function NavBar() {
           </p>
         </div>
 
-        {/* desktop */}
-        <ul className="items-center md:gap-2 gap-4 capitalize hidden md:flex  text-base lg:text-xl">
-          <li className="px-2 py-2 ">
-            <a href="">Home</a>
+        {/* Desktop Nav */}
+        <ul className="hidden md:flex items-center gap-4 font-sans text-xl font-semibold text-gray-800 ">
+          <li className="hover:cursor-pointer hover:text-primary-400">Home</li>
+          <li className="hover:cursor-pointer hover:text-primary-400">
+            Contact
           </li>
-          <li className="px-2 py-2 ">
-            <a href="">About Us</a>
-          </li>
-          <li
-            className="relative px-2 py-2 hover:cursor-pointer "
-            onClick={() =>
-              setServiceMenuIsOpen((serviceMenuIsOpen) => !serviceMenuIsOpen)
-            }
-          >
-            <p>services</p>
-            {serviceMenuIsOpen && (
-              <ul className="absolute bg-[#eff3f5] w-[12rem] p-2 shadow-md top-full -left-1/2 mt-2 z-10 flex flex-col text-base	">
-                <li className="px-2 py-2 ">Lorem.</li>
-                <li className="px-2 py-2 ">Deleniti.</li>
-                <li className="px-2 py-2 ">Provident?</li>
-                <li className="px-2 py-2 ">Nostrum.</li>
-                <li className="px-2 py-2 ">Eaque?</li>
+          <li className="hover:cursor-pointer hover:text-primary-400">About</li>
+          <li className="hover:cursor-pointer hover:text-primary-400 relative">
+            <p
+              onClick={() =>
+                setServiceMenuOpen((serviceMenuOpen) => !serviceMenuOpen)
+              }
+            >
+              <p className="flex gap-1 items-center">
+                <span>Services</span>
+                <span
+                  className={`${
+                    serviceMenuOpen ? " " : "rotate-180 translate-y-1"
+                  } translate-y-[2px] transition-all font-bold`}
+                >
+                  <BsCaretUp />
+                </span>
+              </p>
+            </p>
+            {serviceMenuOpen && (
+              <ul className="absolute z-[4999] top-full left-1/2 -translate-x-1/2 w-64 bg-[#fafafa] text-base shadow-lg rounded-sm px-4 py-2 cursor-auto mt-4 flex flex-col gap-1 text-neutral-700">
+                <li className="hover:text-black cursor-pointer w-fit">Lorem</li>
+                <li className="hover:text-black cursor-pointer w-fit">
+                  Fugiat
+                </li>
+                <li className="hover:text-black cursor-pointer w-fit">
+                  Aliquid
+                </li>
+                <li className="hover:text-black cursor-pointer w-fit">
+                  Quisea
+                </li>
+                <li className="hover:text-black cursor-pointer w-fit">
+                  Voluptas
+                </li>
               </ul>
             )}
           </li>
-          <li className="px-2 py-2 ">
-            <a href="">Projects</a>
-          </li>
-          <li className="px-2 py-2 ">
+          <li>
             <Button>Contact Us</Button>
           </li>
         </ul>
+
+        {/* mobile Nav */}
+        <div className="block md:hidden">
+          <button
+            className="text-2xl relative z-[50001]"
+            onClick={() =>
+              setMobileMenuOpen((mobileMenuOpen) => !mobileMenuOpen)
+            }
+          >
+            {mobileMenuOpen ? <RxCross2 /> : <FaBars />}
+          </button>
+          {mobileMenuOpen && (
+            <div className="absolute h-screen w-full backdrop-blur-md bg-primary-500/60 right-0 top-0 z-[5000] grid place-content-center">
+              <ul className="text-3xl text-center font-bold font-sans text-slate-300 flex flex-col gap-4">
+                <li className="hover:cursor-pointer hover:text-white">Home</li>
+                <li className="hover:cursor-pointer hover:text-white">
+                  Contact
+                </li>
+                <li className="hover:cursor-pointer hover:text-white">About</li>
+                <li className="hover:cursor-pointer hover:text-white">
+                  Services
+                </li>
+              </ul>
+            </div>
+          )}
+        </div>
       </div>
-      {/* </div> */}
     </header>
   );
 }

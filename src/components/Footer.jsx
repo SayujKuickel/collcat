@@ -5,7 +5,7 @@ export default function Footer() {
         <div>
           <p className="flex md:items-center md:justify-center flex-col">
             <img
-              src="./assets/icons/Collcat-logo.png"
+              src="./src/assets/icons/Collcat-logo.png"
               className="w-28 aspect-square brightness-90 invert "
               alt="Collcat-logo"
             />
@@ -15,22 +15,22 @@ export default function Footer() {
           </p>
           <div className="flex gap-2 items-center md:justify-center mt-4">
             <img
-              src="./assets/icons/facebook-icon.svg"
+              src="./src/assets/icons/facebook-icon.svg"
               className="w-10"
               alt=""
             />
             <img
-              src="./assets/icons/facebook-icon.svg"
+              src="./src/assets/icons/facebook-icon.svg"
               className="w-10"
               alt=""
             />
             <img
-              src="./assets/icons/facebook-icon.svg"
+              src="./src/assets/icons/facebook-icon.svg"
               className="w-10"
               alt=""
             />
             <img
-              src="./assets/icons/facebook-icon.svg"
+              src="./src/assets/icons/facebook-icon.svg"
               className="w-10"
               alt=""
             />

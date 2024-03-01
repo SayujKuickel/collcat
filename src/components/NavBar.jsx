@@ -10,7 +10,7 @@ export default function NavBar() {
       <div className="w-full flex items-center justify-between px-4 py-2">
         <div className="flex items-center">
           <img
-            src="./assets/icons/Collcat-logo.png"
+            src="./src/assets/icons/Collcat-logo.png"
             className="w-28 aspect-square "
             alt="Collcat-logo"
           />

@@ -49,7 +49,7 @@ export default function FormSection() {
   }
 
   return (
-    <section className="my-20">
+    <section className="my-40">
       <div className="container mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-2 md:gap-8  p-2 w-full lg:w-[90%] mx-auto">
           <div>

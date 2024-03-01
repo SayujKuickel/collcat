@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .form-input {
+    @apply w-full border-b-primary-400 border-b-2 py-2 outline-none focus:bg-primary-100/20 font-sans;
+  }
+  .footer-link {
+    @apply ml-0 mt-10 md:m-0 md:ml-5 lg:ml-10 flex flex-col gap-2;
+  }
+
+  .footer-link li:nth-child(1) {
+    @apply text-2xl mb-2 font-serif;
+  }
+  .footer-link li:not(:nth-child(1)) {
+    @apply text-gray-300 hover:text-white;
+  }
+}

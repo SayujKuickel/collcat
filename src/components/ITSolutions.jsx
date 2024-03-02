@@ -40,39 +40,3 @@ export default function ITSolutions() {
     </section>
   );
 }
-
-// <li
-// key={item.id}
-// className={`${
-//   i % 2 == 0
-//     ? "bg-primary-600 text-white"
-//     : "bg-slate-100 text-black"
-// } mx-0 lg:mx-4 p-3 md:p-6 w-[24rem] aspect-[3/4] rounded-md flex flex-col gap-3 relative`}
-// >
-// <img
-//   src={item.url}
-//   alt={`icon for ${item.url}`}
-//   className="w-[70%]"
-// />
-{
-  /* <h2
-  className={`${
-    i % 2 == 0 ? "" : "text-primary-600"
-  } text-3xl font-bold capitalize`}
->
-  {item.title}
-</h2> */
-}
-// <p className="font-sans">{item.description}</p>
-
-// <a
-//   href=""
-//   className={`${
-//     i % 2 == 0
-//       ? "bg-slate-100 text-black"
-//       : "bg-primary-600 text-white"
-//   } absolute bottom-8 right-8 px-5 py-4 rounded-full font-extrabold rotate-[125deg] hover:shadow-md hover:-translate-y-1 transition-all`}
-// >
-//   &larr;
-// </a>
-// </li>

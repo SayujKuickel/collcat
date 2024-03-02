@@ -35,7 +35,7 @@ export default function NavBar() {
           </li>
           <li className="hover:cursor-pointer hover:text-primary-400">About</li>
           <li className="hover:cursor-pointer hover:text-primary-400 relative">
-            <p
+            <div
               onClick={() =>
                 setServiceMenuOpen((serviceMenuOpen) => !serviceMenuOpen)
               }
@@ -50,7 +50,7 @@ export default function NavBar() {
                   <BsCaretUp />
                 </span>
               </p>
-            </p>
+            </div>
             {serviceMenuOpen && (
               <ul className="absolute z-[4999] top-full left-1/2 -translate-x-1/2 w-64 bg-[#fafafa] text-base shadow-lg rounded-sm px-4 py-2 cursor-auto mt-4 flex flex-col gap-1 text-neutral-700">
                 <li className="hover:text-black cursor-pointer w-fit">Lorem</li>

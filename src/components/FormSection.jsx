@@ -49,7 +49,7 @@ export default function FormSection() {
   }
 
   return (
-    <section className="container mx-auto my-32">
+    <section className="container mx-auto my-[10rem]">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-2  md:gap-24 w-full mx-auto px-4 md:px-0">
         <div>
           <div className="max-w-[60ch]">
@@ -112,15 +112,13 @@ export default function FormSection() {
             value={formData.query}
             onChange={handleChange}
           ></textarea>
-          <span className="block w-fit mt-8">
-            <Button onClick={handleSubmit} type="primary">
-              Send Message
-            </Button>
-          </span>
+          <Button onClick={handleSubmit} type="primary">
+            Send Message
+          </Button>
         </form>
       </div>
 
-      <hr className="border-1  border-primary-500/20 mt-10 mb-10" />
+      <hr className="border-1 border-primary-500/20 mt-10 mb-10" />
 
       <div className="flex flex-col px-6 md:p-0 md:flex-row flex-wrap md:items-center justify-between gap-4">
         <div>

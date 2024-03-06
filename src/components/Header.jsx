@@ -27,15 +27,12 @@ export default function NavBar() {
 
         {/* Desktop Nav */}
         <div className="hidden md:flex items-center gap-4 font-sans text-xl font-semibold text-gray-800 ">
-          <Link to="/" className="hover:cursor-pointer hover:text-gray-300">
+          <Link to="/" className="hover:text-primary-500">
             Home
           </Link>
 
-          <Link
-            to="/about"
-            className="hover:cursor-pointer hover:text-gray-300"
-          >
-            About Us
+          <Link to="/about" className="hover:text-primary-500">
+            About us
           </Link>
 
           <div
@@ -44,7 +41,7 @@ export default function NavBar() {
             onMouseLeave={() => setIsHovered(false)}
           >
             <p className="flex align-bottom justify-center gap-1">
-              services
+              Services
               <span
                 className={`scale-y-50 text-xl font-bold rotate-180  transition-all ${
                   isHovered ? " rotate-0" : ""
@@ -97,7 +94,10 @@ export default function NavBar() {
               </div>
             </div>
           </div>
-          <Link to="/projects">Projects</Link>
+
+          <Link className="hover:text-primary-500" to="/projects">
+            Projects
+          </Link>
 
           <Button>
             <Link to="/contact">Contact Us</Link>

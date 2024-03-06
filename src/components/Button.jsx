@@ -1,6 +1,6 @@
 export default function Button({ type, children, onClick, centered = false }) {
   return (
-    <a
+    <div
       onClick={onClick}
       href=""
       className={`block w-fit  border-2 border-primary-500 text-black px-6 py-2 rounded-full
@@ -13,6 +13,6 @@ export default function Button({ type, children, onClick, centered = false }) {
       }`}
     >
       {children}
-    </a>
+    </div>
   );
 }

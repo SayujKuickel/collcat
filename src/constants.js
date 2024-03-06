@@ -4,46 +4,50 @@ import DigitalMarketingIcon from "./assets/icons/digital-marketing.svg";
 import BusinessResIcon from "./assets/icons//business-restructuring.svg";
 import DataManageIcon from "./assets/icons/data-management.svg";
 import HrManageIcon from "./assets/icons/human-resource.svg";
-
 export const solutions = [
   {
     id: 1,
     title: "Investment-project",
     description:
       "Identification, venture funding, crowd investment, and business remodeling.",
-    url: invesetmentProjectIcon,
+    imageUrl: invesetmentProjectIcon,
+    path: "/service/investment",
   },
   {
     id: 2,
     title: "Finance ",
     description:
       "Cost management, ratio analysis, capital budgeting, merger and acquisition, portfolio management, and dividend decision.",
-
-    url: FinanceIcon,
+    imageUrl: FinanceIcon,
+    path: "/service/finance",
   },
   {
     id: 3,
     title: "digital marketing",
     description: "Content and digital marketing campaigns.",
-    url: DigitalMarketingIcon,
+    imageUrl: DigitalMarketingIcon,
+    path: "/service/digital-marketing",
   },
   {
     id: 4,
     title: "Business restructuring and redesign",
     description:
       "Strategic restructuring and redesigning of business processes.",
-    url: BusinessResIcon,
+    imageUrl: BusinessResIcon,
+    path: "/service/business-restructuring",
   },
   {
     id: 5,
     title: "Data management and IT solution",
     description: "Efficient management of data and IT solutions.",
-    url: DataManageIcon,
+    imageUrl: DataManageIcon,
+    path: "/service/data-management",
   },
   {
     id: 6,
     title: "HR Management",
     description: "Human resources management and solutions.",
-    url: HrManageIcon,
+    imageUrl: HrManageIcon,
+    path: "/service/hr-management",
   },
 ];

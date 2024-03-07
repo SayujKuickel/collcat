@@ -10,7 +10,7 @@ export default function ContentAndDigitalMarketing() {
       <main>
         <HeroSection image={HeroImage}>
           <h1 className="text-primary-500 text-4xl md:text-6xl font-semibold capitalize font-serif ">
-            Content and Digital Marketing Page:
+            Content and Digital Marketing
           </h1>
         </HeroSection>
         <div className="container mx-auto grid lg:grid-cols-2 gap-4 md:gap-12">

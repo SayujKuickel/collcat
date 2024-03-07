@@ -15,12 +15,14 @@ export default function NavBar() {
     <header className="relative">
       <div className="container mx-auto flex items-center justify-between relatve px-2 md:px-0 ">
         <div className="flex items-center">
-          <img
-            src={CollcatLogo}
-            className="w-28 aspect-square "
-            alt="Collcat-logo"
-          />
-          <p className="hidden md:block text-2xl font-bold uppercase">
+          <Link to="/">
+            <img
+              src={CollcatLogo}
+              className="w-28 aspect-square "
+              alt="Collcat-logo"
+            />
+          </Link>
+          <p className="hidden md:block text-2xl font-bold font-serif uppercase">
             COLLCAT
           </p>
         </div>
@@ -43,8 +45,8 @@ export default function NavBar() {
             <p className="flex align-bottom justify-center gap-1">
               Services
               <span
-                className={`scale-y-50 text-xl font-bold rotate-180  transition-all ${
-                  isHovered ? " rotate-0" : ""
+                className={`scale-y-50 text-xl font-bold rotate-[180deg] transition-all ${
+                  isHovered ? "rotate-[360deg]" : ""
                 }`}
               >
                 ^

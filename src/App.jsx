@@ -8,8 +8,11 @@ import Button from "./components/Button";
 
 // image import
 import HeroImage from "./assets/images/hero-section-image.jpg";
+import { useEffect } from "react";
 
 export default function App() {
+  // useEffect(() => {}, []);
+
   return (
     <main className="font-serif">
       <Header />

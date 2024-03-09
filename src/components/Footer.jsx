@@ -9,7 +9,7 @@ export default function Footer() {
   return (
     <footer className="bg-primary-500 text-white font-sans mt-24 py-6">
       <div className="container mx-auto">
-        <div className="flex items-center justify-between gap-8 p-4 flex-wrap">
+        <section className="flex items-start justify-between gap-8 p-4 flex-wrap">
           <div className="md:mr-64 ">
             <p className="flex md:items-center md:justify-center flex-col">
               <img
@@ -39,6 +39,7 @@ export default function Footer() {
               />
             </div>
           </div>
+
           <ul className="footer-link w-[16rem]">
             <li>Quick Links</li>
             <li>
@@ -82,7 +83,7 @@ export default function Footer() {
               </Link>
             </li>
           </ul>
-        </div>
+        </section>
 
         <hr className="my-8 border border-slate-100/20" />
 

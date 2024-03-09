@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 import CollcatLogo from "../assets/icons/Collcat-logo.png";
 import FacebookIcon from "../assets/icons/facebook.svg";
 import InstagramIcon from "../assets/icons/instagram.svg";
@@ -8,11 +10,11 @@ export default function Footer() {
     <footer className="bg-primary-500 text-white font-sans mt-24 py-6">
       <div className="container mx-auto">
         <div className="flex items-center justify-between gap-8 p-4 flex-wrap">
-          <div className="md:mr-60 ">
+          <div className="md:mr-64 ">
             <p className="flex md:items-center md:justify-center flex-col">
               <img
                 src={CollcatLogo}
-                className="w-28 aspect-square brightness-90 invert "
+                className="w-28 aspect-square brightness-0 invert"
                 alt="Collcat-logo"
               />
               <span className="text-2xl font-bold font-serif uppercase">
@@ -37,29 +39,55 @@ export default function Footer() {
               />
             </div>
           </div>
-          <ul className="footer-link w-[20rem] ">
+          <ul className="footer-link w-[16rem]">
             <li>Quick Links</li>
-            <li>Perferendis</li>
-            <li>Asperiores</li>
-            <li>Laborum</li>
+            <li>
+              <Link to="/">Home</Link>
+            </li>
+            <li>
+              <Link to="/about">About us</Link>
+            </li>
+            <li>
+              <Link to="/projects">Porjects</Link>
+            </li>
+            <li>
+              <Link to="/contact">Contact Us</Link>
+            </li>
           </ul>
-          <ul className="footer-link w-[20rem] ">
-            <li>IT Solutions</li>
-            <li>Incidunt</li>
-            <li>Ratione</li>
-            <li>Non</li>
+          <ul className="footer-link w-[16rem]">
+            <li>Solutions</li>
+            <li>
+              <Link to="/service/business-restructuring">
+                Business Restucturing
+              </Link>
+            </li>
+            <li>
+              <Link to="/service/hr-management">Hr Management</Link>
+            </li>
+            <li>
+              <Link to="/service/data-management">Data Management and IT</Link>
+            </li>
           </ul>
-          <ul className="footer-link w-[20rem] ">
+          <ul className="footer-link w-[16rem]">
             <li>Finance Solutions</li>
-            <li>Obcaecati</li>
-            <li>Assumenda</li>
-            <li>Nihil</li>
+            <li>
+              <Link to="/service/finance">Finance Solutions</Link>
+            </li>
+            <li>
+              <Link to="/service/investment">Investments</Link>
+            </li>
+            <li>
+              <Link to="/service/digital-marketing">
+                Content and Digital Makreting
+              </Link>
+            </li>
           </ul>
         </div>
-        <hr className="my-8 border border-slate-100/20" />
-        <div className="flex items-center justify-between flex-wrap gap-8 md:flex-nowrap">
-          <p>All rights reserved © 2023 Collcat</p>
 
+        <hr className="my-8 border border-slate-100/20" />
+
+        <div className="flex items-center justify-between flex-wrap gap-8 md:flex-nowrap">
+          <p>All rights reserved © {new Date().getFullYear()} Collcat</p>
           <p className="flex items-center  gap-2">
             <a href="">Privacy Policy</a>
             <a href="">Terms & condition</a>

@@ -7,15 +7,13 @@ import FormSection from "./components/FormSection";
 import Button from "./components/Button";
 
 // image import
-import HeroImage from "./assets/images/hero-section-image.jpg";
-import { useEffect } from "react";
+import HeroImage from "./assets/images/hero-section-image-home.jpg";
 
 export default function App() {
-  // useEffect(() => {}, []);
-
   return (
     <main className="font-serif">
       <Header />
+
       <HeroSection height="full" image={HeroImage}>
         <h1 className="text-primary-500 text-4xl md:text-6xl font-semibold capitalize ">
           unlocking financial success and technological innovation

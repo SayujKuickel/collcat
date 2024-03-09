@@ -1,8 +1,8 @@
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import HeroSection from "../components/HeroSection";
-import HeroImage from "../assets/images/hero-section-image.jpg";
 import FormSection from "../components/FormSection";
+import HeroImage from "../assets/images/hero-section-image-home.jpg";
 
 export default function About() {
   return (

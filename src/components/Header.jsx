@@ -101,9 +101,9 @@ export default function NavBar() {
             Projects
           </Link>
 
-          <Button>
-            <Link to="/contact">Contact Us</Link>
-          </Button>
+          <Link to="/contact">
+            <Button>Contact Us</Button>
+          </Link>
         </div>
 
         {/* mobile Nav */}

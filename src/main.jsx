@@ -15,6 +15,8 @@ import About from "./Pages/About.jsx";
 import Projects from "./Pages/Projects.jsx";
 import Contact from "./Pages/Contact.jsx";
 
+// import errorPage from "./Pages/errorPage.jsx"; // for error page not found
+
 const router = createBrowserRouter([
   {
     path: "/",

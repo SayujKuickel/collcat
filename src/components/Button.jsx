@@ -1,4 +1,10 @@
-export default function Button({ type, children, onClick, centered = false }) {
+export default function Button({
+  className,
+  type,
+  children,
+  onClick,
+  centered = false,
+}) {
   return (
     <div
       onClick={onClick}
@@ -10,7 +16,7 @@ export default function Button({ type, children, onClick, centered = false }) {
         type == "primary"
           ? "bg-primary-400 text-white hover:bg-primary-500"
           : "hover:bg-primary-400 hover:text-white"
-      }`}
+      } ${className}`}
     >
       {children}
     </div>

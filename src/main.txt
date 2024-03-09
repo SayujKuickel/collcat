@@ -1,0 +1,80 @@
+import React from "react";
+import ReactDOM from "react-dom/client";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
+import "./index.css";
+
+import Homepage from "./Homepage.jsx";
+import About from "./Pages/About.jsx";
+import Projects from "./Pages/Projects.jsx";
+import Contact from "./Pages/Contact.jsx";
+import PageNotFound from "./Pages/PageNotFound.jsx";
+
+// Import service components
+import Investment from "./Pages/Investment.jsx";
+import Finance from "./Pages/Finance.jsx";
+import CrowdFunding from "./Pages/CrowdFunding.jsx";
+import VentureCapitalFunding from "./Pages/VentureCapitalFunding.jsx";
+import BusinessModeling from "./Pages/BusinessModeling.jsx";
+import MergerAndAcquisitions from "./Pages/MergerAndAcquisitions.jsx";
+import PortfolioManagement from "./Pages/PortfolioManagement.jsx";
+import CostManagement from "./Pages/CostManagement.jsx";
+
+ReactDOM.createRoot(document.getElementById("root")).render(
+  <React.StrictMode>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Homepage />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/projects" element={<Projects />} />
+        <Route path="/contact" element={<Contact />} />
+        {/* Routes for services */}
+        <Route path="/service/investment" element={<Investment />} />
+        <Route path="/service/finance" element={<Finance />} />
+        <Route path="/service/crowd-funding" element={<CrowdFunding />} />
+        <Route
+          path="/service/venture-capital-funding"
+          element={<VentureCapitalFunding />}
+        />
+        <Route
+          path="/service/business-modeling"
+          element={<BusinessModeling />}
+        />
+        <Route
+          path="/service/merger-and-acquisitions"
+          element={<MergerAndAcquisitions />}
+        />
+        <Route
+          path="/service/portfolio-management"
+          element={<PortfolioManagement />}
+        />
+        <Route path="/service/cost-management" element={<CostManagement />} />
+
+        {/* Wildcard route for any other paths */}
+        <Route path="*" element={<PageNotFound />} />
+      </Routes>
+    </BrowserRouter>
+  </React.StrictMode>
+);
+
+// {/* Routes for services */}
+// <Route path="/service/investment" element={<Investment />} />
+// <Route path="/service/finance" element={<Finance />} />
+// <Route path="/service/crowd-funding" element={<CrowdFunding />} />
+// <Route
+//   path="/service/venture-capital-funding"
+//   element={<VentureCapitalFunding />}
+// />
+// <Route
+//   path="/service/business-modeling"
+//   element={<BusinessModeling />}
+// />
+// <Route
+//   path="/service/merger-and-acquisitions"
+//   element={<MergerAndAcquisitions />}
+// />
+// <Route
+//   path="/service/portfolio-management"
+//   element={<PortfolioManagement />}
+// />
+// <Route path="/service/cost-management" element={<CostManagement />} />

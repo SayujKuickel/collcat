@@ -1,67 +1,42 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import "./index.css";
 
-import App from "./App";
-import BusinessRestucturingAndRedesigning from "./Pages/BusinessRestucturingAndRedesigning.jsx";
-import ContentAndDigitalMarketing from "./Pages/ContentAndDigitalMarketing.jsx";
-import DataManagementAndIT from "./Pages/DataManagementAndIT.jsx";
-import Finance from "./Pages/Finance.jsx";
-import HrManagement from "./Pages/HrManagement.jsx";
-import Investment from "./Pages/Investment.jsx";
+import Homepage from "./Homepage.jsx";
 import About from "./Pages/About.jsx";
 import Projects from "./Pages/Projects.jsx";
 import Contact from "./Pages/Contact.jsx";
+import PageNotFound from "./Pages/PageNotFound.jsx";
 
-// import errorPage from "./Pages/errorPage.jsx"; // for error page not found
+import Service from "./Pages/Service.jsx";
 
-const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <App />,
-  },
-  {
-    path: "/service/business-restructuring",
-    element: <BusinessRestucturingAndRedesigning />,
-  },
-  {
-    path: "/service/digital-marketing",
-    element: <ContentAndDigitalMarketing />,
-  },
-  {
-    path: "/service/data-management",
-    element: <DataManagementAndIT />,
-  },
-  {
-    path: "/service/finance",
-    element: <Finance />,
-  },
-  {
-    path: "/service/hr-management",
-    element: <HrManagement />,
-  },
-  {
-    path: "/service/investment",
-    element: <Investment />,
-  },
-  {
-    path: "/about",
-    element: <About />,
-  },
-  {
-    path: "/projects",
-    element: <Projects />,
-  },
-  {
-    path: "/contact",
-    element: <Contact />,
-  },
-]);
-
+import { pages } from "./pages.js";
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <BrowserRouter>
+      <Routes>
+        <Route path="*" element={<PageNotFound />} />
+        <Route path="/" element={<Homepage />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/projects" element={<Projects />} />
+        <Route path="/contact" element={<Contact />} />
+
+        {pages.map((page) => (
+          <Route
+            key={page.id}
+            path={page.path}
+            element={
+              <Service
+                title={page.title}
+                image={page.image}
+                description={page.description}
+              />
+            }
+          />
+        ))}
+      </Routes>
+    </BrowserRouter>
   </React.StrictMode>
 );

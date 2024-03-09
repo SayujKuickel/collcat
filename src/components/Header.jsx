@@ -87,7 +87,12 @@ export default function NavBar() {
                   About Us
                 </Link>
 
-                <PopupMenu text="Services" itemList={pages} />
+                <PopupMenu
+                  mobileMenuOpen={mobileMenuOpen}
+                  handleMobileMenuOpen={setMobileMenuOpen}
+                  text="Services"
+                  itemList={pages}
+                />
 
                 <Link to="/projects">Projects</Link>
                 <Link to="/contact">Contact Us</Link>

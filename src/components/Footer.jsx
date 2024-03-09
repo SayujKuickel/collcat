@@ -7,7 +7,7 @@ import xTwitterIcon from "../assets/icons/x-twitter.svg";
 
 export default function Footer() {
   return (
-    <footer className="bg-primary-500 text-white font-sans mt-24 py-6">
+    <footer className="bg-primary-500 text-white font-sans mt-24 py-6 px-1">
       <div className="container mx-auto">
         <section className="flex items-start justify-between gap-8 p-4 flex-wrap">
           <div className="md:mr-64 ">
@@ -89,7 +89,7 @@ export default function Footer() {
 
         <div className="flex items-center justify-between flex-wrap gap-8 md:flex-nowrap">
           <p>All rights reserved © {new Date().getFullYear()} Collcat</p>
-          <p className="flex items-center  gap-2">
+          <p className="flex items-center justify-between w-full md:w-auto gap-2">
             <a href="">Privacy Policy</a>
             <a href="">Terms & condition</a>
           </p>

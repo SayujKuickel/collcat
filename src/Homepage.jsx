@@ -6,6 +6,8 @@ import ITSolutions from "./components/ITSolutions";
 import FormSection from "./components/FormSection";
 import Button from "./components/Button";
 
+import { Link } from "react-router-dom";
+
 // image import
 import HeroImage from "./assets/images/hero-section-image-home.jpg";
 
@@ -22,9 +24,12 @@ export default function App() {
           Your Partner in Comprehensive Finance Management and Cutting-Edge IT
           Services
         </p>
-        <Button type="primary" centered={true}>
-          Contact us
-        </Button>
+
+        <Link to="/contact">
+          <Button type="primary" centered={true}>
+            Contact us
+          </Button>
+        </Link>
       </HeroSection>
 
       <ITSolutions />

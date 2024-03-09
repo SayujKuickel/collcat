@@ -2,8 +2,18 @@ import React from "react";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 
-export default function PopupMenu({ text, itemList }) {
+export default function PopupMenu({
+  text,
+  itemList,
+  handleMobileMenuOpen,
+  setMobileMenuOpen,
+}) {
   const [isHovered, setIsHovered] = useState(false);
+
+  const handleClick = () => {
+    handleMobileMenuOpen(false); // Close mobile menu
+    setMobileMenuOpen(false); // Close mobile menu
+  };
 
   return (
     <nav
@@ -34,6 +44,7 @@ export default function PopupMenu({ text, itemList }) {
               key={item.id}
               to={item.path}
               className="hover:text-primary-500"
+              onClick={handleClick}
             >
               {item.title}
             </Link>

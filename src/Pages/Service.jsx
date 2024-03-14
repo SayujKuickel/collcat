@@ -7,7 +7,9 @@ import { Link } from "react-router-dom";
 
 import HeroImage from "../assets/images/hero-section-image-home.jpg";
 
-export default function Service({ title, image, description }) {
+export default function Service({
+  pageContent: { title, image, description },
+}) {
   return (
     <>
       <Header />

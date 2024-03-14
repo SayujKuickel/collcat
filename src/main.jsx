@@ -13,6 +13,7 @@ import PageNotFound from "./Pages/PageNotFound.jsx";
 import Service from "./Pages/Service.jsx";
 
 import { pages } from "./pages.js";
+
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <BrowserRouter>
@@ -27,13 +28,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
           <Route
             key={page.id}
             path={page.path}
-            element={
-              <Service
-                title={page.title}
-                image={page.image}
-                description={page.description}
-              />
-            }
+            element={<Service pageContent={page} />}
           />
         ))}
       </Routes>

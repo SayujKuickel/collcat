@@ -13,6 +13,8 @@ import { pages } from "../pages";
 export default function NavBar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
+  function handleMobileMenuOpen() {}
+
   return (
     <header className="relative">
       <div className="container mx-auto flex items-center justify-between relatve px-2 md:px-0 ">
@@ -87,12 +89,7 @@ export default function NavBar() {
                   About Us
                 </Link>
 
-                <PopupMenu
-                  mobileMenuOpen={mobileMenuOpen}
-                  handleMobileMenuOpen={setMobileMenuOpen}
-                  text="Services"
-                  itemList={pages}
-                />
+                <PopupMenu text="Services" itemList={pages} />
 
                 <Link to="/projects">Projects</Link>
                 <Link to="/contact">Contact Us</Link>

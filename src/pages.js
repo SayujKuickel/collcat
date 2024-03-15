@@ -84,11 +84,3 @@ export const pages = [
   `,
   },
 ];
-// /service/investment
-// /service/crowd-funding
-// /service/venture-capital-funding
-// /service/business-modeling
-// /service/merger-and-acquisitions
-// /service/portfolio-management
-// /service/cost-management
-// /service/finance

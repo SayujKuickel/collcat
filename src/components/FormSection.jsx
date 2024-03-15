@@ -1,7 +1,7 @@
-import React, { useState } from "react";
+import React, { Children, useState } from "react";
 import Button from "./Button";
 
-export default function FormSection() {
+export default function FormSection({ children }) {
   const [formData, setFormData] = useState({
     name: "",
     company: "",
@@ -54,7 +54,7 @@ export default function FormSection() {
         <div>
           <div className="max-w-[60ch]">
             <h2 className="font-serif text-4xl md:text-6xl text-primary-500 font-bold mb-4">
-              Lets Upgrade Your Business.
+              {children ? children : "Lets Upgrade Your Business."}
             </h2>
 
             <p className="font-sans text-base lg:text-xl text-justify">

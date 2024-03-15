@@ -3,6 +3,7 @@ import Footer from "../components/Footer";
 import HeroSection from "../components/HeroSection";
 
 import HeroImage from "../assets/images/hero-section-image-home.jpg";
+import ItFeatures from "../components/ItFeatures";
 
 export default function About() {
   return (
@@ -14,6 +15,8 @@ export default function About() {
             Projects
           </h1>
         </HeroSection>
+
+        <ItFeatures />
       </main>
       <Footer />
     </>

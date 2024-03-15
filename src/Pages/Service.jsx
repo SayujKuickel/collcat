@@ -2,6 +2,7 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import HeroSection from "../components/HeroSection";
 import ServiceLayout from "../components/ServiceLayout";
+import FormSection from "../components/FormSection";
 import Button from "../components/Button";
 import { Link } from "react-router-dom";
 
@@ -31,6 +32,8 @@ export default function Service({
             <Button type="primary">Get in Touch</Button>
           </Link>
         </ServiceLayout>
+
+        <FormSection>Feel Free to contact Us!</FormSection>
       </main>
       <Footer />
     </>

@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function TwoColLayout({ image, children }) {
+export default function ServiceLayout({ image, children }) {
   return (
     <div className="container mx-auto md:items-center flex flex-col-reverse md:flex-row-reverse gap-4">
       <div className="rounded-md overflow-hidden flex-1 group">

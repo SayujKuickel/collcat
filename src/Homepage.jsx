@@ -6,6 +6,8 @@ import ITSolutions from "./components/ITSolutions";
 import FormSection from "./components/FormSection";
 import Button from "./components/Button";
 
+import { database } from "./pages";
+
 import { Link } from "react-router-dom";
 
 // image import
@@ -20,7 +22,7 @@ export default function App() {
         <h1 className="text-primary-500 text-4xl md:text-6xl font-semibold capitalize ">
           unlocking financial success and technological innovation
         </h1>
-        <p className="font-sans  text-base md:text-xl font-medium">
+        <p className="font-sans text-base md:text-xl font-medium">
           Your Partner in Comprehensive Finance Management and Cutting-Edge IT
           Services
         </p>
@@ -32,7 +34,7 @@ export default function App() {
         </Link>
       </HeroSection>
 
-      <ITSolutions />
+      <ITSolutions pageData={database} />
       <FormSection />
       <Footer />
     </main>

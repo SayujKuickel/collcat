@@ -9,8 +9,10 @@ import { Link } from "react-router-dom";
 import HeroImage from "../assets/images/hero-section-image-home.jpg";
 
 export default function Service({
-  pageContent: { title, image, description },
+  pageData: { id, title, pageData, sections },
 }) {
+  // const { id, title, pageData, sections } = pageData;
+
   return (
     <>
       <Header />
@@ -20,9 +22,22 @@ export default function Service({
             {title}
           </h1>
         </HeroSection>
-        <ServiceLayout image={image}>
+
+        <ul className="container mx-auto ">
+          <div className="grid grid-cols-1 px-4 md:px-0 sm:grid-cols-2 gap-y-16 gap-x-8 md:gap-16">
+            {sections.map(({ id, title, body }) => (
+              <li key={id} className="flex flex-col gap-2">
+                <h2 className="text-2xl md:text-3xl font-bold font-serif">{`${title}`}</h2>
+                <p className="md:text-xl">{body}</p>
+              </li>
+            ))}
+          </div>
+        </ul>
+
+        <FormSection>Feel Free to contact Us!</FormSection>
+
+        {/* <ServiceLayout image={image}>
           <h3 className="font-bold text-3xl md:text-4xl mb-3">{title}</h3>
-          {/* inner content */}
           <div dangerouslySetInnerHTML={{ __html: description }} />
 
           <Link
@@ -31,9 +46,7 @@ export default function Service({
           >
             <Button type="primary">Get in Touch</Button>
           </Link>
-        </ServiceLayout>
-
-        <FormSection>Feel Free to contact Us!</FormSection>
+        </ServiceLayout> */}
       </main>
       <Footer />
     </>

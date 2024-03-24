@@ -1,20 +1,19 @@
 import { Link } from "react-router-dom";
 import Button from "./Button";
-import { pages } from "../pages";
 
-export default function ITSolutions() {
+export default function ITSolutions({ pageData }) {
   return (
     <section className="bg-gradient-to-r from-primary-400 to-primary-300 text-white px-2 py-8 my-[8rem]">
       <div className="container mx-auto py-8">
         <h1 className="text-4xl md:text-6xl font-bold">Our IT Solutions</h1>
-        <p
-          className="
-         font-sans text-xl"
-        >
-          Crafted to Perfection.
-        </p>
+        <p className="font-sans text-xl">Crafted to Perfection.</p>
+
+        {/*  */}
+        {/*  */}
+        {/*  */}
+
         <ul className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 mt-8">
-          {pages.map((page) => (
+          {pageData.map((page) => (
             <li
               key={page.id}
               className="p-4 gap-4 rounded-md bg-primary-500 shadow-sm shadow-gray-800/20 hover:bg-[#eff3f5] hover:text-primary-500 hover:shadow-sm transition-all group hover:scale-[1.02] overflow-hidden flex flex-col justify-between"
@@ -23,9 +22,9 @@ export default function ITSolutions() {
                 <h2 className="text-2xl md:text-4xl font-bold capitalize mb-3">
                   {page.title}
                 </h2>
-                <p className="font-sans md:text-xl">
+                {/* <p className="font-sans md:text-xl">
                   {page.description.split(" ").slice(0, 12).join(" ") + `... `}
-                </p>
+                </p> */}
               </div>
 
               <Link to={page.path}>

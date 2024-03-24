@@ -12,7 +12,7 @@ import PageNotFound from "./Pages/PageNotFound.jsx";
 
 import Service from "./Pages/Service.jsx";
 
-import { pages } from "./pages.js";
+import { database } from "./pages.js";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
@@ -23,12 +23,16 @@ ReactDOM.createRoot(document.getElementById("root")).render(
         <Route path="/about" element={<About />} />
         <Route path="/projects" element={<Projects />} />
         <Route path="/contact" element={<Contact />} />
-
-        {pages.map((page) => (
-          <Route
+        {/* <Route
             key={page.id}
             path={page.path}
             element={<Service pageContent={page} />}
+          /> */}
+        {database.map((dataitem) => (
+          <Route
+            key={dataitem.id}
+            path={dataitem.path}
+            element={<Service pageData={dataitem} />}
           />
         ))}
       </Routes>

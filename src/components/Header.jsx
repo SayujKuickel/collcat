@@ -8,7 +8,7 @@ import CrossIcon from "../assets/icons/cross-nav.svg";
 import BarsIcon from "../assets/icons/bars-nav.svg";
 import PopupMenu from "./PopupMenu";
 
-import { database, pages } from "../pages";
+import { database } from "../pages";
 
 export default function NavBar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -89,7 +89,7 @@ export default function NavBar() {
                   About Us
                 </Link>
 
-                <PopupMenu text="Services" itemList={pages} />
+                <PopupMenu text="Services" itemList={database} />
 
                 <Link to="/projects">Projects</Link>
                 <Link to="/contact">Contact Us</Link>

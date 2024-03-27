@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
-import Button from "./Button";
-import { pages } from "../pages";
+import { database } from "../pages";
 
 export default function ItFeatures() {
   return (
@@ -15,7 +14,7 @@ export default function ItFeatures() {
         </p>
       </div>
       <ul className="flex flex-col font-serif mt-14 md:mt-0">
-        {pages.map((page) => (
+        {database.map((page) => (
           <li key={page.id}>
             <Link
               to={page.path}

@@ -3,6 +3,9 @@
 @tailwind utilities;
 
 @layer utilities {
+  .absolute-center {
+    @apply absolute left-1/2 top-1/2 -translate-y-1/2 -translate-x-1/2;
+  }
   .form-input {
     @apply w-full border-b-primary-400 border-b-2 py-2 px-1 outline-none focus:bg-primary-100/10 font-sans;
   }

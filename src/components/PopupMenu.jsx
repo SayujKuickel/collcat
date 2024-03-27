@@ -22,7 +22,7 @@ export default function PopupMenu({ text, itemList }) {
         </span>
       </p>
       <div
-        className={`absolute w-64 bg-[#fafafa] shadow-xl top-full left-1/2 -translate-x-1/2 flex flex-col gap-3 px-4 py-2 rounded-md z-[10000] text-black  ${
+        className={`absolute w-[18rem] bg-[#fafafa] shadow-xl top-full left-1/2 -translate-x-1/2 flex flex-col gap-3 px-4 py-2 rounded-md z-[10000] text-black  ${
           isHovered
             ? "block opacity-100 translate-y-0"
             : "hidden opacity-0 -translate-y-10"

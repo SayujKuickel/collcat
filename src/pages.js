@@ -11,6 +11,8 @@ export const database = [
   {
     id: 1,
     title: "Funding Consultancy ",
+    description:
+      "This service category focuses on providing assistance and guidance in securing funding for various purposes, such as business expansion or project financing.",
     path: "/service/funding-consultancy",
     sections: [
       {
@@ -30,6 +32,8 @@ export const database = [
   {
     id: 2,
     title: "Investment Consultancy",
+    description:
+      "This category involves services related to investment analysis, project identification, mergers and acquisitions, business valuation, and venture funding.",
     path: "/service/investment-consultancy",
     sections: [
       {
@@ -68,6 +72,8 @@ export const database = [
   {
     id: 3,
     title: "Management Consultancy",
+    description:
+      "Services in this category encompass strategic planning, human resource management, restructuring, internal control, business modeling, organizational structure development, and policy development.",
     path: "/service/management-consultancy",
     sections: [
       {
@@ -118,6 +124,8 @@ export const database = [
   {
     id: 4,
     title: "Information Technology",
+    description:
+      "This category covers services related to software development, website designing, hardware and networking, cloud computing, data storage, data analysis, and ERP implementation.",
     path: "/service/information-technology",
     sections: [
       {
@@ -167,6 +175,8 @@ export const database = [
   {
     id: 5,
     title: "Marketing and Branding",
+    description:
+      "Services in this category involve marketing consultancy, branding consultancy, AI digital marketing, website development, and video and content creation.",
     path: "/service/marketing-and-branding",
     sections: [
       {
@@ -204,6 +214,8 @@ export const database = [
   {
     id: 6,
     title: "Legal Consultancy",
+    description:
+      "This category offers legal advisory services such as company legal consultancy, company registration, company liquidation, tax-related disputes, legal suits, statutory compliance, and solicitor-related jobs.",
     path: "/service/legal-consultancy",
     sections: [
       {
@@ -253,6 +265,8 @@ export const database = [
   {
     id: 7,
     title: "Financial Consultancy",
+    description:
+      "Services in this category include cost management, data and ratio analysis, risk assessment, long-term investment planning, goal setting and planning, cost-benefit analysis, due diligence audit projects, financial feasibility analysis, and business restructuring.",
     path: "/service/financial-consultancy",
     sections: [
       {
@@ -314,6 +328,8 @@ export const database = [
   {
     id: 8,
     title: "Accounting Consultancy",
+    description:
+      "This category provides services such as accounting services, accounting training, tax return preparation, audit support, software implementation support, financial reporting, and statutory compliance.",
     path: "/service/accounting-consultancy",
     sections: [
       {
@@ -363,6 +379,8 @@ export const database = [
   {
     id: 9,
     title: "Tax Consultancy",
+    description:
+      "Services in this category include tax planning, tax consultancy, and support in full audit.",
     path: "/service/tax-consultancy",
     sections: [
       {
@@ -388,6 +406,8 @@ export const database = [
   {
     id: 10,
     title: "Engineering Consulting",
+    description:
+      "This category offers services such as design, BOQ (Bill of Quantities) preparation, DPR (Detailed Project Report) preparation, IEF (Initial Environmental Examination)/EIA (Environmental Impact Assessment) report preparation, and property valuation.",
     path: "/service/engineering-consulting",
     sections: [
       {
@@ -425,6 +445,8 @@ export const database = [
   {
     id: 11,
     title: "Aviation Consulting",
+    description:
+      "Services in this category involve aviation parts consultancy, aircraft analysis, sector field analysis, revenue/cost management, sector planning, receivable/payable management, and payroll management.",
     path: "/service/aviation-consulting",
     sections: [
       {

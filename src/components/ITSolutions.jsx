@@ -22,9 +22,9 @@ export default function ITSolutions({ pageData }) {
                 <h2 className="text-2xl md:text-4xl font-bold capitalize mb-3">
                   {page.title}
                 </h2>
-                {/* <p className="font-sans md:text-xl">
-                  {page.description.split(" ").slice(0, 12).join(" ") + `... `}
-                </p> */}
+                <p className="font-sans md:text-md">
+                  {page.description.split(" ").slice(0, 12).join(" ") + `...`}
+                </p>
               </div>
 
               <Link to={page.path}>

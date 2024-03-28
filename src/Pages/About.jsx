@@ -25,6 +25,7 @@ export default function About() {
         <h2 className="text-center font-serif text-2xl md:text-6xl text-primary-500 font-bold mb-4 mt-12">
           Who are we?
         </h2>
+
         <p className="max-w-[62ch] mx-auto text-center md:text-xl font-serif">
           COLCAT is a dynamic consulting firm offering specialized services in
           Funding, Investment, Management, IT, Legal, Finance, Accounting, Tax,

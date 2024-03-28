@@ -23,7 +23,8 @@ export default function ITSolutions({ pageData }) {
                   {page.title}
                 </h2>
                 <p className="font-sans md:text-md">
-                  {page.description.split(" ").slice(0, 12).join(" ") + `...`}
+                  {page.description}
+                  {/* {page.description.split(" ").slice(0, 12).join(" ") + `...`} */}
                 </p>
               </div>
 

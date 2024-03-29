@@ -9,7 +9,6 @@ import About from "./Pages/About.jsx";
 import Projects from "./Pages/Projects.jsx";
 import Contact from "./Pages/Contact.jsx";
 import PageNotFound from "./Pages/PageNotFound.jsx";
-
 import Service from "./Pages/Service.jsx";
 
 import { database } from "./pages.js";

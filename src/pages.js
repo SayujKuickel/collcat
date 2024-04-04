@@ -7,6 +7,36 @@ import Img2_3 from "./assets/images/2_MergerAcquisition.jpg";
 import Img2_4 from "./assets/images/2_BusinessValuation.jpg";
 import Img2_5 from "./assets/images/2_ventureFunding.jpg";
 
+import Img3_1 from "./assets/images/3_1_Management_Consultancy.jpg";
+import Img3_2 from "./assets/images/3_2_HR_Consultancy.jpg";
+import Img3_3 from "./assets/images/3_3_Res_sick_company.jpg";
+import Img3_4 from "./assets/images/3_4_internal_control_and_risk_Management.jpg";
+import Img3_5 from "./assets/images/3_5_Business_Modeling.jpg";
+import Img3_6 from "./assets/images/3_6_Organizational_SD.jpg";
+import Img3_7 from "./assets/images/3_7_Policy_Development.jpg";
+
+import Img4_1 from "./assets/images/4_1_Software Development.jpg";
+import Img4_2 from "./assets/images/4_2_Web_design.jpg";
+import Img4_3 from "./assets/images/4_3_Hardware_and_Networking.jpg";
+import Img4_4 from "./assets/images/4_4_Cloud_Computing.jpg";
+import Img4_5 from "./assets/images/4_5_Data_Storage.jpg";
+import Img4_6 from "./assets/images/4_6_Data_Analysis.jpg";
+import Img4_7 from "./assets/images/4_7_ERP_Implementation.jpg";
+
+import Img5_1 from "./assets/images/5_1_Marketing_Consultancy.jpg";
+import Img5_2 from "./assets/images/5_2_Branding_Consultancy.jpg";
+import Img5_3 from "./assets/images/5_3_AI_Digital_Marketing.jpg";
+import Img5_4 from "./assets/images/5_4_Website_Development.jpg";
+import Img5_5 from "./assets/images/5_5_Video_and_Content_Creation.jpg";
+
+import Img6_1 from "./assets/images/6_1_Company_Legal_Consultancy.jpg";
+import Img6_2 from "./assets/images/6_2_Company_Registration.jpg";
+import Img6_3 from "./assets/images/6_3_Company_Liquidation_Consultancy.jpg";
+import Img6_4 from "./assets/images/6_4_Filing_Tax_related_disputes.jpg";
+import Img6_5 from "./assets/images/6_5_Legal_suits.jpg";
+import Img6_6 from "./assets/images/6_6_Statutory_Compliance.jpg";
+import Img6_7 from "./assets/images/6_7_Statutory_Compliance.jpg";
+
 export const database = [
   {
     id: 1,
@@ -29,6 +59,7 @@ export const database = [
       },
     ],
   },
+
   {
     id: 2,
     title: "Investment Consultancy",
@@ -79,43 +110,43 @@ export const database = [
       {
         id: 1,
         title: "Management Consultancy",
-        image: null,
+        image: Img3_1,
         body: "Assist in developing strategic plans, business models, and growth strategies aligned with company goals. Conducts in-depth financial analysis to assess the company’s performance, profitability, and financial health.",
       },
       {
         id: 2,
         title: "Human Resource Consultancy",
-        image: null,
+        image: Img3_2,
         body: "Provide guidance on HR policies, procedures, and documentations to mitigate legal risk and ensure adherence to regulatory standards. Design performance management framework including goal setting, process, performance, appraisal systems, and feedback mechanism. We provide comprehensive support in recruiting candidates, hiring the right employee, process payrolls, conduct disciplinary actions, update policies, maintain employee records, conduct benefit analysis and training programs. Support recruitment efforts by providing job descriptions, tailored to attract qualified candidates. Conduct comprehensive analysis of organization’s structure, functions, and strategic objectives to understand its staffing needs.",
       },
       {
         id: 3,
         title: "Restructuring Sick Company",
-        image: null,
+        image: Img3_3,
         body: "Helps to identify root causes of financial distress including liquidity issues, solvency concerns, operational inefficiencies, and debt burdens. Provide guidance on corporate governance, fiduciary duties, and disclose obligations to mitigate legal risk and ensure transparency in restructuring efforts.",
       },
       {
         id: 4,
         title: "Internal Control and Risk management",
-        image: null,
+        image: Img3_4,
         body: "Assist in conducting assessments of existing internal control system to evaluate their effectiveness in mitigating risk and achieving organizational objectives. Assist organizations in understanding and complying with applicable laws, regulations, and industry standards related to internal control and risk management.",
       },
       {
         id: 5,
         title: "Business Modeling",
-        image: null,
+        image: Img3_5,
         body: "We assist in streamlining workflows, modernizing technology infrastructure, refining marketing strategies, and even orchestrating comprehensive business model transformations to drive success and adaptation in a dynamic marketplace. Develop comprehensive financial models to forecast future financial performance including revenue projections, cost estimates, and cash flow analysis. Provide guidance on financial statements, presentation, audit readiness, and disclosure best practices to enhance transparency and credibility.",
       },
       {
         id: 6,
         title: "Organizational Structure Development",
-        image: null,
+        image: Img3_6,
         body: "Assists in developing organizational structure defining hierarchy, governance policies, charters, and procedures to promote transparency, integrity, and ethical conduct within the organization.",
       },
       {
         id: 7,
         title: "Policy Development",
-        image: null,
+        image: Img3_7,
         body: "Assist in designing, drafting, and documenting policies and procedures tailored to the organizational needs, objectives, and operating environments. Assist businesses in developing compliance policies to ensure adherence to laws, regulations, and standards. Assess existing control frameworks, identify weaknesses or gaps, and recommend enhancements to strengthen control and mitigate risks.",
       },
     ],
@@ -131,47 +162,48 @@ export const database = [
       {
         id: 1,
         title: "Software Development",
-        image: null,
+        image: Img4_1,
         body: "",
       },
       {
         id: 2,
         title: "Website Designing",
-        image: null,
+        image: Img4_2,
         body: "",
       },
       {
         id: 3,
         title: "Hardware and Networking",
-        image: null,
+        image: Img4_3,
         body: "",
       },
       {
         id: 4,
         title: "Cloud Computing",
-        image: null,
+        image: Img4_4,
         body: "",
       },
       {
         id: 5,
         title: "Data Storage",
-        image: null,
+        image: Img4_5,
         body: "",
       },
       {
         id: 6,
         title: "Data Analysis",
-        image: null,
+        image: Img4_6,
         body: "",
       },
       {
         id: 7,
         title: "ERP Implementation",
-        image: null,
+        image: Img4_7,
         body: "",
       },
     ],
   },
+
   {
     id: 5,
     title: "Marketing and Branding",
@@ -182,35 +214,36 @@ export const database = [
       {
         id: 1,
         title: "Marketing Consultancy",
-        image: null,
+        image: Img5_1,
         body: "Provides guidance on marketing channels, promotional tactics, and networking opportunities to enhance visibility and attract clients.",
       },
       {
         id: 2,
         title: "Branding Consultancy",
-        image: null,
+        image: Img5_2,
         body: "Helps clients to manage and enhance their brand reputation through proactive reputation management strategies and crisis communication plans.",
       },
       {
         id: 3,
         title: "AI Digital Marketing",
-        image: null,
+        image: Img5_3,
         body: "",
       },
       {
         id: 4,
         title: "Website Development",
-        image: null,
+        image: Img5_4,
         body: "",
       },
       {
         id: 5,
         title: "Video and Content Creation",
-        image: null,
+        image: Img5_5,
         body: "",
       },
     ],
   },
+
   {
     id: 6,
     title: "Legal Consultancy",
@@ -221,47 +254,48 @@ export const database = [
       {
         id: 1,
         title: "Company Legal Consultancy",
-        image: null,
+        image: Img6_1,
         body: "Advice on the most suitable legal structure for businesses based on their objectives, size, and industry. Helps businesses establish robust corporate governance frameworks and comply with corporate law and regulations.",
       },
       {
         id: 2,
         title: "Company Registration and Business License related Consultancy",
-        image: null,
+        image: Img6_2,
         body: "Assists in the registration of businesses with the appropriate authorities such as the registrar of companies or similar regulatory bodies.",
       },
       {
         id: 3,
         title: "Company Liquidation Consultancy",
-        image: null,
+        image: Img6_3,
         body: "Guides the company through the formal liquidation process. Provides regular updates, progress reports, and financial statements to stakeholders to maintain transparency and manage expectations.",
       },
       {
         id: 4,
         title: "Filing Tax related disputes",
-        image: null,
+        image: Img6_4,
         body: "Assists individuals and businesses in planning their taxes efficiently by analyzing financial situations, helps to prepare and file tax returns, conduct tax compliance reviews, and assist in filing appeals and resolving disputes through negotiation or litigation.",
       },
       {
         id: 5,
         title: "Legal Suits",
-        image: null,
+        image: Img6_5,
         body: "Conducts detailed financial analysis, investigates financial records to uncover evidence of fraud or financial wrongdoing, traces financial transactions, analyzes financial statements to provide expert opinions on fraudulent activities, and assists clients in dispute resolution such as arbitration. Also assists in presenting financial evidence, analyzing financial implications, and facilitating constructive discussions between parties.",
       },
       {
         id: 6,
         title: "Statutory Compliance",
-        image: null,
+        image: Img6_6,
         body: "Helps in developing and updating policies and procedures to ensure compliance with statutory requirements by drafting policies, conducting risk assessments to identify potential compliance risks and gaps within the organization, helps to establish systems for proper documentation, and represents the organization in dealing with regulatory authorities and government agencies regarding statutory compliance matters.",
       },
       {
         id: 7,
         title: "Solicit related jobs",
-        image: null,
+        image: Img6_7,
         body: "Provides legal advisory services to clients such as taxation law, corporate law, employment law, etc. Helps to conduct legal analysis on behalf of the legal department, review legal documents to ensure compliance with applicable laws and regulations, assist with gathering evidence, preparing legal documents, and providing expert opinions or testimony in court proceedings.",
       },
     ],
   },
+
   {
     id: 7,
     title: "Financial Consultancy",

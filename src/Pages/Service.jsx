@@ -95,7 +95,7 @@ export default function Service({ pageData: { title, sections } }) {
                 <img
                   src={image}
                   className="brightness-90 group-hover:scale-[1.025] h-64 md:h-[24rem] w-full transition-all object-cover"
-                  alt={`image for ${image}`}
+                  alt={`image for ${title}`}
                 />
               </div>
             </li>

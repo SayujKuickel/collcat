@@ -22,11 +22,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
         <Route path="/about" element={<About />} />
         <Route path="/projects" element={<Projects />} />
         <Route path="/contact" element={<Contact />} />
-        {/* <Route
-            key={page.id}
-            path={page.path}
-            element={<Service pageContent={page} />}
-          /> */}
+
         {database.map((dataitem) => (
           <Route
             key={dataitem.id}

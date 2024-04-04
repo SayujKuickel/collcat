@@ -1,21 +1,24 @@
-import { useState } from "react";
-import { Link } from "react-router-dom";
+import { useState, useEffect } from "react";
+import { Link, useLocation } from "react-router-dom";
 import Button from "./Button";
-
-// icons
 import CollcatLogo from "../assets/icons/Collcat-logo.png";
 import CrossIcon from "../assets/icons/cross-nav.svg";
 import BarsIcon from "../assets/icons/bars-nav.svg";
 import PopupMenu from "./PopupMenu";
-
 import { database } from "../pages";
 
 export default function NavBar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const location = useLocation();
+
+  useEffect(() => {
+    // Close mobile menu when route changes
+    setMobileMenuOpen(false);
+  }, [location]);
 
   return (
     <header className="relative">
-      <div className="container mx-auto flex items-center justify-between relatve px-2 md:px-0 ">
+      <div className="container mx-auto flex items-center justify-between relative px-2 md:px-0 ">
         <div className="flex items-center">
           <Link to="/">
             <img

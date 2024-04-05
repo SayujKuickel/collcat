@@ -49,37 +49,61 @@ export default function Footer() {
               <Link to="/about">About us</Link>
             </li>
             <li>
-              <Link to="/projects">Porjects</Link>
+              <Link to="/projects">Projects</Link>
             </li>
             <li>
               <Link to="/contact">Contact Us</Link>
             </li>
           </ul>
+
           <ul className="footer-link w-[16rem]">
-            <li>Solutions</li>
+            <li>Consultancy</li>
             <li>
-              <Link to="/service/business-restructuring">
-                Business Restucturing
+              <Link to="/service/funding-consultancy">Funding Consultancy</Link>
+            </li>
+            <li>
+              <Link to="/service/investment-consultancy">
+                Investment Consultancy
               </Link>
             </li>
             <li>
-              <Link to="/service/hr-management">Hr Management</Link>
+              <Link to="/service/management-consultancy">
+                Management Consultancy
+              </Link>
             </li>
             <li>
-              <Link to="/service/data-management">Data Management and IT</Link>
+              <Link to="/service/financial-consultancy">
+                Financial Consultancy
+              </Link>
+            </li>
+            <li>
+              <Link to="/service/accounting-consultancy">
+                Accounting Consultancy
+              </Link>
+            </li>
+            <li>
+              <Link to="/service/tax-consultancy">Tax Consultancy</Link>
+            </li>
+            <li>
+              <Link to="/service/engineering-consulting">
+                Engineering Consulting
+              </Link>
+            </li>
+            <li>
+              <Link to="/service/aviation-consulting">Aviation Consulting</Link>
             </li>
           </ul>
+
           <ul className="footer-link w-[16rem]">
-            <li>Finance Solutions</li>
+            <li>Other</li>
             <li>
-              <Link to="/service/finance">Finance Solutions</Link>
+              <Link to="/service/information-technology">
+                Information Technology
+              </Link>
             </li>
             <li>
-              <Link to="/service/investment">Investments</Link>
-            </li>
-            <li>
-              <Link to="/service/digital-marketing">
-                Content and Digital Makreting
+              <Link to="/service/marketing-and-branding">
+                Marketing and Branding
               </Link>
             </li>
           </ul>

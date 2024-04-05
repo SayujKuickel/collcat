@@ -12,8 +12,8 @@ export default function NavBar() {
   const location = useLocation();
 
   useEffect(() => {
-    // Close mobile menu when route changes
     setMobileMenuOpen(false);
+    window.scrollTo(0, 0);
   }, [location]);
 
   return (

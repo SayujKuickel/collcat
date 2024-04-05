@@ -15,7 +15,7 @@ import Img3_5 from "./assets/images/3_5_Business_Modeling.jpg";
 import Img3_6 from "./assets/images/3_6_Organizational_SD.jpg";
 import Img3_7 from "./assets/images/3_7_Policy_Development.jpg";
 
-import Img4_1 from "./assets/images/4_1_Software Development.jpg";
+import Img4_1 from "./assets/images/4_1_Software_Development.jpg";
 import Img4_2 from "./assets/images/4_2_Web_design.jpg";
 import Img4_3 from "./assets/images/4_3_Hardware_and_Networking.jpg";
 import Img4_4 from "./assets/images/4_4_Cloud_Computing.jpg";
@@ -36,6 +36,22 @@ import Img6_4 from "./assets/images/6_4_Filing_Tax_related_disputes.jpg";
 import Img6_5 from "./assets/images/6_5_Legal_suits.jpg";
 import Img6_6 from "./assets/images/6_6_Statutory_Compliance.jpg";
 import Img6_7 from "./assets/images/6_7_Statutory_Compliance.jpg";
+
+import Img7_1 from "./assets/images/7_1_Cost_Management.jpg";
+import Img7_2 from "./assets/images/7_2_Data_Analysis.jpg";
+import Img7_3 from "./assets/images/7_3_Risk_Assessment.jpg";
+import Img7_4 from "./assets/images/7_4_Long_Investment_Planning.jpg";
+import Img7_5 from "./assets/images/7_5_Goal_Setting_and_Planning.jpg";
+import Img7_6 from "./assets/images/7_6_Cost_Benefit_Analysis.jpg";
+import Img7_7 from "./assets/images/7_7_Due_Diligence_Audit_Project.jpg";
+import Img7_8 from "./assets/images/7_8_Financial_Feasibility_Analysis.jpg";
+import Img7_9 from "./assets/images/7_9_Business_Restructuring.jpg";
+
+import Img8_1 from "./assets/images/8_1_Accounting_Services.jpg";
+import Img8_2 from "./assets/images/8_2_Accounting_Training.jpg";
+import Img8_3 from "./assets/images/8_3_Tax_Return.jpg";
+import Img8_4 from "./assets/images/8_4_Audit_Support.jpg";
+import Img8_5 from "./assets/images/8_5_Software_Implementation_Support.jpg";
 
 export const database = [
   {
@@ -306,59 +322,60 @@ export const database = [
       {
         id: 1,
         title: "Cost Management",
-        image: null,
+        image: Img7_1,
         body: "We're your cost companions, transforming numbers into stories. With us, you'll unravel the mysteries of expenses, painting a clear picture of your financial landscape. We'll help you sculpt budgets, predict future costs, and keep a watchful eye on spending.",
       },
       {
         id: 2,
         title: "Data & Ratio Analysis",
-        image: null,
+        image: Img7_2,
         body: "Assist clients in gathering relevant financial data from various sources such as financial statements, accounting records, and other financial reports. Help to provide clients with reliable data analysis and financial insights to support decision-making processes such as investment decision, strategic planning, mergers and acquisitions, and financial restructuring.",
       },
       {
         id: 3,
         title: "Risk Assessment",
-        image: null,
+        image: Img7_3,
         body: "Helps businesses proactively identify, assess, and mitigate risk enhancing their resilience, competitiveness, and long-term sustainability in an uncertain business environment.",
       },
       {
         id: 4,
         title: "Long Investment Planning",
-        image: null,
+        image: Img7_4,
         body: "Helps to identify and prioritize long-term financial goals such as retirement plans, wealth accumulation, or estate planning.",
       },
       {
         id: 5,
         title: "Goal Setting and Planning (Budgeting)",
-        image: null,
+        image: Img7_5,
         body: "Help to set clear financial goals, develop actionable plans, and navigate the path toward financial success and prosperity. Help in developing effective variance analysis by monitoring actual performance, conducting variance analysis, identifying root causes, and taking corrective and preventive actions to align performance with budgetary expectations.",
       },
       {
         id: 6,
         title: "Cost-Benefit Analysis",
-        image: null,
+        image: Img7_6,
         body: "Helps businesses and organizations make data-driven decisions, prioritize investment, allocate resources efficiently, and maximize returns on investment while minimizing risk and uncertainty.",
       },
       {
         id: 7,
         title: "Due Diligence Audit Project",
-        image: null,
-        body: "Examine the target company’s financial statement, including balance sheets, income statements, and cash flow statements to assess its financial health, performance, and stability. Identify any tax exposures, risks, or contingencies that could impact the transaction structure or valuation and provide comprehensive due diligence reports summarizing findings, analysis, and recommendations for the client.",
+        image: Img7_7,
+        body: "Examine the target company's financial statement, including balance sheets, income statements, and cash flow statements to assess its financial health, performance, and stability. Identify any tax exposures, risks, or contingencies that could impact the transaction structure or valuation and provide comprehensive due diligence reports summarizing findings, analysis, and recommendations for the client.",
       },
       {
         id: 8,
         title: "Financial Feasibility Analysis",
-        image: null,
+        image: Img7_8,
         body: "Helps in developing sophisticated models to forecast the potential financial performance of the proposed project or investment. Identify and assess various financial risks associated with the proposed project, including market risk, credit risk, operational risk, regulatory risk, financial risk, and prepare feasibility reports summarizing the financial analysis findings, assumptions, methodologies, and recommendations for the project clients.",
       },
       {
         id: 9,
         title: "Business Restructuring",
-        image: null,
+        image: Img7_9,
         body: "Prepare financial projections and forecasts to assess the potential impact of restructuring initiatives on the company’s financial performance, capital structure, cash flow dynamics and help clients to develop restructuring strategy aligned with the company’s objectives, market dynamics, and evaluate various restructuring options such as cost reduction initiatives, debt restructuring, business model redesign, mergers, acquisitions, or strategic alliances.",
       },
     ],
   },
+
   {
     id: 8,
     title: "Accounting Consultancy",
@@ -369,31 +386,31 @@ export const database = [
       {
         id: 1,
         title: "Accounting Services",
-        image: null,
+        image: Img8_1,
         body: "Assist in examination of company’s financial statements and accounting records to ensure accuracy, completeness, and compliance with relevant accounting standards and regulations. Helps in Book Keeping. Assists businesses in ensuring compliance with various regulatory requirements, including tax laws, industry-specific regulations, and accounting standards such as Generally Accepted Accounting Principles (GAAP) or Nepal Financial Reporting Standards (NFRS).",
       },
       {
         id: 2,
         title: "Accounting Training",
-        image: null,
+        image: Img8_2,
         body: "Provides comprehensive technical training programs covering various aspects of accounting, auditing, and financial reporting through seminars, webinars and also training on a particular accounting software, implementing new accounting standards or addressing specific challenges faced by the organization.",
       },
       {
         id: 3,
         title: "Tax Return (VAT, TDS, Income Tax)",
-        image: null,
+        image: Img8_3,
         body: "Help businesses and individuals prepare and file their tax returns accurately and in compliance with applicable tax laws and regulations and assists them in complying with VAT regulations by ensuring proper VAT registration, timely filing of VAT returns, accurate calculation and reporting of VAT liabilities and compliance with VAT invoicing and record-keeping requirements.",
       },
       {
         id: 4,
         title: "Audit Support",
-        image: null,
+        image: Img8_4,
         body: "Helps in planning and execution of the audit process through developing an audit plan tailored to the specific needs and risks of the clients, determining the scope of the audit, the procedures to be performed, and the resources required. Provide assurance to stakeholders that the financial statements are presented fairly and in accordance with applicable accounting standards.",
       },
       {
         id: 5,
         title: "Software Implementation Support",
-        image: null,
+        image: Img8_5,
         body: "Helps in the selection of software by evaluating various options based on factors such as functionality and cost, provide project management support to ensure smooth and timely implementation of the software and assist in managing the changes associated with software implementation by communicating with stakeholders, addressing concerns, and facilitating programs to ensure a smooth transition to the new systems.",
       },
       {
@@ -410,6 +427,7 @@ export const database = [
       },
     ],
   },
+
   {
     id: 9,
     title: "Tax Consultancy",
@@ -437,6 +455,7 @@ export const database = [
       },
     ],
   },
+
   {
     id: 10,
     title: "Engineering Consulting",
@@ -476,6 +495,7 @@ export const database = [
       },
     ],
   },
+
   {
     id: 11,
     title: "Aviation Consulting",

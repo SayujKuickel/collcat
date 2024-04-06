@@ -52,6 +52,26 @@ import Img8_2 from "./assets/images/8_2_Accounting_Training.jpg";
 import Img8_3 from "./assets/images/8_3_Tax_Return.jpg";
 import Img8_4 from "./assets/images/8_4_Audit_Support.jpg";
 import Img8_5 from "./assets/images/8_5_Software_Implementation_Support.jpg";
+import Img8_6 from "./assets/images/8_6_Financial_Reporting.jpg";
+import Img8_7 from "./assets/images/8_7_Statutory_Compliance.jpg";
+
+import Img9_1 from "./assets/images/9_1_Tax_Planning.jpg";
+import Img9_2 from "./assets/images/9_2_Tax_Consultancy.jpg";
+import Img9_3 from "./assets/images/9_3_Support_in_Full_Audit.jpg";
+
+import Img10_0 from "./assets/images/10_0_Design.jpg";
+import Img10_1 from "./assets/images/10_1_BOQ_Preparation.jpg";
+import Img10_2 from "./assets/images/10_2_DPR_Preparation.jpg";
+import Img10_3 from "./assets/images/10_3_EIA_Report_Preparation.jpg";
+import Img10_4 from "./assets/images/10_4_Property_Valuation.jpg";
+
+import Img11_1 from "./assets/images/11_1_Aviation_Parts.jpg";
+import Img11_2 from "./assets/images/11_2_Aircraft_Analysis.jpg";
+import Img11_3 from "./assets/images/11_3_Sector_Field_Analysis.jpg";
+import Img11_4 from "./assets/images/11_4_Cost_Management.jpg";
+import Img11_5 from "./assets/images/11_5_Sector_Planning.jpg";
+import Img11_6 from "./assets/images/11_6_Payable_Management.jpg";
+import Img11_7 from "./assets/images/11_7_Payroll_Management.jpg";
 
 export const database = [
   {
@@ -127,13 +147,13 @@ export const database = [
         id: 1,
         title: "Management Consultancy",
         image: Img3_1,
-        body: "Assist in developing strategic plans, business models, and growth strategies aligned with company goals. Conducts in-depth financial analysis to assess the company’s performance, profitability, and financial health.",
+        body: "Assist in developing strategic plans, business models, and growth strategies aligned with company goals. Conducts in-depth financial analysis to assess the company's performance, profitability, and financial health.",
       },
       {
         id: 2,
         title: "Human Resource Consultancy",
         image: Img3_2,
-        body: "Provide guidance on HR policies, procedures, and documentations to mitigate legal risk and ensure adherence to regulatory standards. Design performance management framework including goal setting, process, performance, appraisal systems, and feedback mechanism. We provide comprehensive support in recruiting candidates, hiring the right employee, process payrolls, conduct disciplinary actions, update policies, maintain employee records, conduct benefit analysis and training programs. Support recruitment efforts by providing job descriptions, tailored to attract qualified candidates. Conduct comprehensive analysis of organization’s structure, functions, and strategic objectives to understand its staffing needs.",
+        body: "Provide guidance on HR policies, procedures, and documentations to mitigate legal risk and ensure adherence to regulatory standards. Design performance management framework including goal setting, process, performance, appraisal systems, and feedback mechanism. We provide comprehensive support in recruiting candidates, hiring the right employee, process payrolls, conduct disciplinary actions, update policies, maintain employee records, conduct benefit analysis and training programs. Support recruitment efforts by providing job descriptions, tailored to attract qualified candidates. Conduct comprehensive analysis of organization's structure, functions, and strategic objectives to understand its staffing needs.",
       },
       {
         id: 3,
@@ -371,7 +391,7 @@ export const database = [
         id: 9,
         title: "Business Restructuring",
         image: Img7_9,
-        body: "Prepare financial projections and forecasts to assess the potential impact of restructuring initiatives on the company’s financial performance, capital structure, cash flow dynamics and help clients to develop restructuring strategy aligned with the company’s objectives, market dynamics, and evaluate various restructuring options such as cost reduction initiatives, debt restructuring, business model redesign, mergers, acquisitions, or strategic alliances.",
+        body: "Prepare financial projections and forecasts to assess the potential impact of restructuring initiatives on the company's financial performance, capital structure, cash flow dynamics and help clients to develop restructuring strategy aligned with the company's objectives, market dynamics, and evaluate various restructuring options such as cost reduction initiatives, debt restructuring, business model redesign, mergers, acquisitions, or strategic alliances.",
       },
     ],
   },
@@ -387,7 +407,7 @@ export const database = [
         id: 1,
         title: "Accounting Services",
         image: Img8_1,
-        body: "Assist in examination of company’s financial statements and accounting records to ensure accuracy, completeness, and compliance with relevant accounting standards and regulations. Helps in Book Keeping. Assists businesses in ensuring compliance with various regulatory requirements, including tax laws, industry-specific regulations, and accounting standards such as Generally Accepted Accounting Principles (GAAP) or Nepal Financial Reporting Standards (NFRS).",
+        body: "Assist in examination of company's financial statements and accounting records to ensure accuracy, completeness, and compliance with relevant accounting standards and regulations. Helps in Book Keeping. Assists businesses in ensuring compliance with various regulatory requirements, including tax laws, industry-specific regulations, and accounting standards such as Generally Accepted Accounting Principles (GAAP) or Nepal Financial Reporting Standards (NFRS).",
       },
       {
         id: 2,
@@ -416,13 +436,13 @@ export const database = [
       {
         id: 6,
         title: "Financial Reporting",
-        image: null,
+        image: Img8_6,
         body: "Prepare financial statements such as the income statement, balance sheet, and cash flow statements and help to summarize the financial performance, position, and cash flows of the firm over a specified period, providing valuable information to clients. Implement internal controls to safeguard assets, maintain data integrity, and ensure the reliability of financial reporting.",
       },
       {
         id: 7,
         title: "Statutory Compliance",
-        image: null,
+        image: Img8_7,
         body: "Assist in implementing and adhering to accounting standards such as Generally Accepted Accounting Principles (GAAP) or Nepal Financial Reporting Standard (NFRS). Advise on corporate governance practices to ensure transparency, accountability, and integrity in financial reporting and decision-making processes.",
       },
     ],
@@ -438,19 +458,19 @@ export const database = [
       {
         id: 1,
         title: "Tax Planning",
-        image: null,
-        body: "Analyze client’s financial situations to identify opportunities for tax optimization and recommend tax-efficient investment strategies, deductions, credits, and exemptions that can minimize tax liabilities. Advise clients on the optimal legal structure from a tax perspective.",
+        image: Img9_1,
+        body: "Analyze client's financial situations to identify opportunities for tax optimization and recommend tax-efficient investment strategies, deductions, credits, and exemptions that can minimize tax liabilities. Advise clients on the optimal legal structure from a tax perspective.",
       },
       {
         id: 2,
         title: "Tax Consultancy",
-        image: null,
+        image: Img9_2,
         body: "Assist clients in complying with tax laws and regulations by preparing and filing various tax returns and other relevant filings to ensure timely and accurate submissions to avoid penalties and interest charges.",
       },
       {
         id: 3,
         title: "Support in Full Audit",
-        image: null,
+        image: Img9_3,
         body: "Helps a client to examine financial records, transactions, and accounting practices to ensure compliance with accounting standards and regulations. Examine supporting documentation such as invoices, receipts, and bank statements to validate the financial information. Works on behalf of clients to submit their documents in Tax Office for the company's full audit.",
       },
     ],
@@ -466,31 +486,31 @@ export const database = [
       {
         id: 1,
         title: "Design",
-        image: null,
+        image: Img10_0,
         body: "",
       },
       {
         id: 2,
         title: "BOQ Preparation",
-        image: null,
+        image: Img10_1,
         body: "",
       },
       {
         id: 3,
         title: "DPR Preparation",
-        image: null,
+        image: Img10_2,
         body: "",
       },
       {
         id: 4,
         title: "IEF/ EIA Report Preparation",
-        image: null,
+        image: Img10_3,
         body: "",
       },
       {
         id: 5,
         title: "Property Valuation",
-        image: null,
+        image: Img10_4,
         body: "Develop financial models to estimate the value of properties based on income approach, cost approach, and sales comparison considering factors such as rental income, operating expenses, capitalization rates, depreciation, and market comparables to calculate property values accurately. Also helps to select the most appropriate valuation method based on the nature of the property.",
       },
     ],
@@ -506,43 +526,43 @@ export const database = [
       {
         id: 1,
         title: "Aviation Parts",
-        image: null,
+        image: Img11_1,
         body: "",
       },
       {
         id: 2,
         title: "Aircraft Analysis",
-        image: null,
+        image: Img11_2,
         body: "",
       },
       {
         id: 3,
         title: "Sector Field Analysis",
-        image: null,
+        image: Img11_3,
         body: "",
       },
       {
         id: 4,
         title: "Revenue/ Cost Management",
-        image: null,
+        image: Img11_4,
         body: "Conduct financial analysis to assess revenue streams, cost structures, profitability drivers for aviation and also help to analyze key performance indicators (KPIs) such as revenue per client, cost per service, and profit margins to identify areas for improvement and optimization. Conduct financial ratio analysis, trend analysis, and variance analysis to assess revenue performance, profitability, and growth prospects.",
       },
       {
         id: 5,
         title: "Sector Planning",
-        image: null,
+        image: Img11_5,
         body: "",
       },
       {
         id: 6,
         title: "Receivable/ Payable Management",
-        image: null,
+        image: Img11_6,
         body: "Helps in reviewing policies, procedures, and segregation of duties to identify weaknesses and recommend improvements to enhance control over receivables and payables. Assist in implementing fraud prevention measures and detecting potential fraud related to receivable and payment transactions.",
       },
       {
         id: 7,
         title: "Payroll Management",
-        image: null,
+        image: Img11_7,
         body: "Perform internal controls testing, reconciliation of payroll accounts and sample testing of payroll transactions to identify errors, discrepancies, or potential fraud risks. Conduct payroll audit and reviews the accuracy and integrity of payroll data and processes.",
       },
     ],

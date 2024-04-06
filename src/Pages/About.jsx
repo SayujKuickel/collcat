@@ -1,5 +1,3 @@
-import Header from "../components/Header";
-import Footer from "../components/Footer";
 import HeroSection from "../components/HeroSection";
 import CardItem from "../components/CardItem";
 
@@ -14,7 +12,6 @@ import missionIcon from "../assets/icons/bullseye-solid.svg";
 export default function About() {
   return (
     <>
-      <Header />
       <HeroSection image={HeroImage}>
         <h1 className="text-primary-500 text-4xl md:text-6xl font-semibold capitalize font-serif ">
           About Us
@@ -59,7 +56,6 @@ export default function About() {
           </CardItem>
         </div>
       </section>
-      <Footer />
     </>
   );
 }

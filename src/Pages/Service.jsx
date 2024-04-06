@@ -1,5 +1,3 @@
-import Header from "../components/Header";
-import Footer from "../components/Footer";
 import HeroSection from "../components/HeroSection";
 import FormSection from "../components/FormSection";
 
@@ -46,7 +44,6 @@ export default function Service({ pageData: { title, sections } }) {
 
   return (
     <>
-      <Header />
       <main>
         <HeroSection image={HeroImage}>
           <h1 className="text-primary-500 text-4xl md:text-6xl font-semibold capitalize font-serif ">
@@ -81,7 +78,6 @@ export default function Service({ pageData: { title, sections } }) {
 
         <FormSection>Feel Free to contact Us!</FormSection>
       </main>
-      <Footer />
     </>
   );
 }

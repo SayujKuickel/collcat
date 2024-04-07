@@ -10,9 +10,9 @@ export default function HeroSection({ children, image, height }) {
   });
 
   return (
-    <section className="mt-8 mb-16 || opacity-0" ref={HeroSection}>
+    <section className="my-20 opacity-0" ref={HeroSection}>
       <div
-        className={`container mx-auto  relative rounded-none md:rounded-2xl overflow-hidden 
+        className={`container mx-auto  relative rounded-none md:rounded-2xl overflow-hidden shadow-xl
         ${height === "full" ? "h-[40rem]" : "h-[20rem]"}`}
       >
         <img
@@ -20,6 +20,7 @@ export default function HeroSection({ children, image, height }) {
           className="w-full h-full object-cover"
           alt="Hero Image"
         />
+
         <div className="absolute backdrop-blur-sm bg-[#ececec66] backdrop-brightness-90 text-center z-2 -top-1/2 -left-1/2 translate-x-1/2 translate-y-1/2 w-full h-full p-2 flex justify-center flex-col gap-5">
           {children}
         </div>

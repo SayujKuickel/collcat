@@ -17,23 +17,33 @@ export default function DesktopHeader({ database }) {
             alt="Collcat-logo"
           />
         </Link>
-        <p className="hidden md:block text-2xl font-bold font-serif uppercase">
+        <p className="hidden lg:block text-2xl font-bold font-serif uppercase">
           COLLCAT
         </p>
       </div>
 
-      {/* Desktop Nav */}
-      <div className="hidden md:flex items-center gap-4 font-sans text-xl font-semibold text-gray-800 ">
-        <Link to="/" className="hover:text-primary-500">
+      <div className="hidden md:flex items-center gap-1 font-sans text-xl font-semibold text-gray-800 ">
+        <Link
+          to="/"
+          className="hover:text-primary-500 px-4 py-2 rounded-md hover:bg-gray-100/50"
+        >
           Home
         </Link>
-        <Link to="/about" className="hover:text-primary-500">
+        <Link
+          to="/about"
+          className="hover:text-primary-500 px-4 py-2 rounded-md hover:bg-gray-100/50"
+        >
           About us
         </Link>
 
-        <PopupMenu text="Services" itemList={database} />
+        <span className="hover:text-primary-500 px-4 py-2 rounded-md hover:bg-gray-100/50">
+          <PopupMenu text="Services" itemList={database} />
+        </span>
 
-        <Link className="hover:text-primary-500" to="/projects">
+        <Link
+          to="/projects"
+          className="hover:text-primary-500 px-4 py-2 rounded-md hover:bg-gray-100/50"
+        >
           Projects
         </Link>
         <Link to="/contact">

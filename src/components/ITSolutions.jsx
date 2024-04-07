@@ -15,13 +15,13 @@ export default function ITSolutions({ pageData }) {
               opacity: 1,
               y: 0,
               duration: 0.5,
-              ease: "power3.out",
+              ease: "power2.in",
             });
           }
         });
       },
       { threshold: 0.5 }
-    ); // Adjust threshold as needed
+    );
 
     boxesRef.current.forEach((box) => {
       observer.observe(box);

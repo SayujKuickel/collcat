@@ -22,7 +22,7 @@ export default function App() {
           Services
         </p>
 
-        <Link to="/contact">
+        <Link to="/contact" className="w-fit mx-auto">
           <Button type="primary" centered={true}>
             Contact us
           </Button>

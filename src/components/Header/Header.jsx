@@ -19,7 +19,7 @@ export default function NavBar() {
 
   return (
     <header className="relative testing">
-      <div className="container mx-auto flex items-center justify-between ">
+      <div className="container mx-auto flex items-center justify-between px-4 md:px-0">
         <DesktopHeader database={database} />
 
         <div className="block md:hidden">

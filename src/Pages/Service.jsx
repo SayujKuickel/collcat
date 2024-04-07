@@ -28,7 +28,6 @@ export default function Service({ pageData: { title, sections } }) {
   });
 
   useEffect(() => {
-    // Restart animation when sections change
     gsap.fromTo(
       sectionRef.current,
       { opacity: 0, y: 50 },
